@@ -1,14 +1,25 @@
 {
-  "name": "hardhat-javascript-starter",
+  "name": "@randombits/contracts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/random-bits-studio/contracts.git"
+  },
   "scripts": {
     "build": "npx thirdweb@latest detect",
     "deploy": "npx thirdweb@latest deploy",
     "release": "npx thirdweb@latest release"
   },
   "devDependencies": {
-    "hardhat": "^2.10.1"
+    "hardhat": "^2.12.3",
+    "semantic-release": "^19.0.5"
   },
   "dependencies": {
-    "@thirdweb-dev/contracts": "^3"
+    "@openzeppelin/contracts": "^4.8.0"
+  },
+  "release": {
+    "branches": ["main"]
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
